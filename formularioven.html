@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Venta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="l1">
+    <h2>Formulario de Venta</h2>
+   
+    <form action="procesar_venta.php" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto" required>
+                <option value="">Selecciona un producto</option>
+                <option value="producto1">coche de F.H</option>
+                <option value="producto2">Entradas </option>
+                <option value="producto3">SET FORZA</option>
+                <option value="producto3">CARROS NUEVOS</option>
+            </select><br>
+            
+            <label for="nombre">Especificaciones:</label>
+            <input type="text" id="Especificaciones" name="Especificaciones" required><br>
+            <label for="nombre">direccion</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+        </div>
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+        </div>
+        <div>
+            <button type="submit">Enviar Pedido</button>
+        </div>
+        <img src="images (2).jfif" alt="" class="hot"><br>
+    <img src="" alt=""><br>
+    <img src="" alt=""><br>
+    <img src="" alt=""><br>
+    </form>
+</body>
+</html>
